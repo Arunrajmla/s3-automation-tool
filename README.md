@@ -52,7 +52,7 @@ python s3_file_processor.py
 The script automatically combines files downloaded from S3 and generates Excel files with the following sheets:
 - **With File Names**: Data including the source file names.
 - **Without File Names**: Data without the source file names.
-- **New Supplier**: Filtered data excluding specified vendors.
+- **New Distributor**: Filtered data excluding specified vendors.
 
 ### 3. Output
 Processed files will be saved in a folder named with the current date.
@@ -69,16 +69,16 @@ export AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
 Update the `bucket_name` and `prefix` variables in the script to match your S3 bucket and folder structure.
 
 ### Exclusion File
-Place an Excel file named `Supplier name that we can remove - Copy.xlsx` in the base directory. This file should contain a column named `VendorName` listing vendors to exclude during processing.
+Place an Excel file named `Distributor name that we can remove - Copy.xlsx` in the base directory. This file should contain a column named `VendorName` listing vendors to exclude during processing.
 
 ## Folder Structure
 The script creates the following structure in the output directory:
 ```
 <current_date>/
-├── Payments/
-├── IntakeQA/
+├── Amounts/
+├── QC/
 ├── combined_all_with_and_without_file_names_<type>_new.xlsx
-├── combined_intakeqa_failed_<current_date>.xlsx
+├── combined_QC_failed_<current_date>.xlsx
 ```
 
 ## Logging
@@ -88,4 +88,4 @@ Logs are output to the console and provide detailed information about file downl
 Feel free to fork the repository and submit pull requests to enhance functionality.
 
 ---
-For any issues or inquiries, contact [Your Name/Email].
+For any issues or inquiries, contact [Arunraj Katturaja/arunrajkcs@gmail.com].
