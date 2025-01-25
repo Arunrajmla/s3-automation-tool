@@ -84,9 +84,6 @@ The script creates the following structure in the output directory:
 ## Logging
 Logs are output to the console and provide detailed information about file downloads and processing.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contributing
 Feel free to fork the repository and submit pull requests to enhance functionality.
 
