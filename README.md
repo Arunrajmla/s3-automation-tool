@@ -72,7 +72,7 @@ Update the `bucket_name` and `prefix` variables in the script to match your S3 b
 Place an Excel file named `Distributor name that we can remove - Copy.xlsx` in the base directory. This file should contain a column named `VendorName` listing vendors to exclude during processing.
 
 ## Folder Structure
-The script creates the following structure in the output directory:
+The script creates the following structure in the output directory: 
 ```
 <current_date>/
 ├── Amounts/
